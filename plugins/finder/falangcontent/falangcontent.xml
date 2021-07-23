@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="finder" method="upgrade">
+	<name>PLG_FINDER_FALANG_CONTENT</name>
+	<author>Stéphane Bouey</author>
+	<creationDate>November 2016</creationDate>
+	<copyright>2011-2016, Faboba</copyright>
+	<license>GNU General Public License version 2 or later http://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>stephane.bouey@faboba.com</authorEmail>
+	<authorUrl>http://www.faboba.com</authorUrl>
+	<version>1.1.</version>
+	<description>PLG_FINDER_FALANG_CONTENT_XML_DESCRIPTION</description>
+	<files folder="plugins/finder/falangcontent">
+		<file plugin="falangcontent">falangcontent.php</file>
+		<file plugin="falangcontent">index.html</file>
+		<folder>helpers</folder>
+		<folder>language</folder>
+     	<filename>index.html</filename>
+	</files>
+</extension>

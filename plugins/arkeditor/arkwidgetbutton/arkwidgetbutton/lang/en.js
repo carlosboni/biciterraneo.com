@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("arkwidgetbutton","en",{menu:"Edit Ark Widget",toolbar:"Ark Widget"})

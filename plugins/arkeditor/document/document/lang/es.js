@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("document","es",{menu:"Editar Documento",toolbar:"Insertar/Editar Documento"})

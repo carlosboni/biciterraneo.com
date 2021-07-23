@@ -1,0 +1,133 @@
+/**
+ * @version     3.8.x
+ * @package     Simple Image Gallery Pro
+ * @author      JoomlaWorks - https://www.joomlaworks.net
+ * @copyright   Copyright (c) 2006 - 2015 JoomlaWorks Ltd. All rights reserved.
+ * @license     https://www.joomlaworks.net/license
+ */
+
+/* Icons */
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/slick.woff') format('woff'),
+         url('../fonts/slick.ttf') format('truetype'),
+         url('../fonts/slick.svg#slick') format('svg');
+}
+
+/* --- Generic Styling --- */
+a:active,a:focus {outline:0;}
+table.contentpaneopen {width:100%;}
+li.sigProClear {clear:both;float:none!important;height:0!important;line-height:0!important;border:none!important;background:none!important;width:auto;margin:0!important;padding:0!important;}
+
+/* Container */
+.sigProSlickShow1Container {background:#efefef;margin:8px 0;padding:16px;clear:both;}
+    div.sigProSlickShow1PlaceholderContainer {background:#fff url(../images/loader_squares.gif) no-repeat 50% 50%;padding:0;margin-bottom:8px;}
+        div.sigProSlickShow1Placeholder {position:relative;}
+.sigProSlickShow1 {margin:0 auto!important;padding:0!important;list-style:none;clear:both;}
+    .sigProSlickShow1.singleThumbGallery {}
+
+/* Main Image */
+.sigProMainImage { display: block; width: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; }
+
+/* Thumbnail */
+.sigProSlickShow1 .sigProThumb {float:left;background:#fff!important;margin:0 4px 4px 0;padding:0;border:none!important;}
+.sigProSlickShow1 .sigProThumb span.sigProLinkOuterWrapper {}
+.sigProSlickShow1 .sigProThumb span.sigProLinkWrapper {}
+.sigProSlickShow1 .sigProThumb a.sigProLink,
+.sigProSlickShow1 .sigProThumb a.sigProLink:hover {position:relative;display:block;padding:0;margin:0;overflow:hidden;}
+.sigProSlickShow1 .sigProThumb a.sigProLink {color:#333;background-color:#fff;}
+.sigProSlickShow1 .sigProThumb a.sigProLink:hover {color:#eee;text-decoration:none;opacity:0.6;}
+.sigProSlickShow1 .sigProThumb a.sigProLinkSelected {opacity:0.6;}
+.sigProSlickShow1 .sigProThumb a.sigProLink img.sigProImg,
+.sigProSlickShow1 .sigProThumb a.sigProLink:hover img.sigProImg {display:block;padding:0;margin:0;border:none;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+
+/* Caption */
+.sigProSlickShow1 span.sigProPseudoCaption {display:none;}
+.sigProSlickShow1 span.sigProCaption {display:block;position:absolute;bottom:0;left:0;right:0;padding:10px;text-align:center;background:rgba(0,0,0,0.8);color:#eee;}
+.sigProSlickShow1 .sigProThumb a.sigProLink:hover span.sigProCaption {display:block;position:absolute;bottom:0;left:0;right:0;text-align:left;padding:10px;font-size:14px;color:#eee;font-weight:normal;background:#333;opacity:0.8;line-height:120%;}
+.sigProSlickShow1 span.sigProPseudoCaption b {display:block;position:absolute;bottom:0;left:0;right:0;text-align:left;padding:10px;font-size:14px;font-weight:normal;visibility:hidden;}
+
+/* Popup */
+span.sigProPopupCaption {font-weight:bold;color:#C63C13;font-size:13px;}
+a.sigProDownloadLink,
+a.sigProDownloadLink:hover {background:url(../images/disk.png) no-repeat left center;padding:4px 0 4px 20px;}
+div.sigProModulePosition {text-align:center;border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding:4px;margin:8px 0;background:#ffffdd;}
+
+/* Previous Next Functionality */
+div.sigProSlickShow1PlaceholderContainer { position: relative; }
+a.sigProArrow { font-weight: 700; position: absolute; top: 50%; z-index: 999; background-color: #fff; opacity: 0.5; background-color: rgba(255,255,255,.75); padding: 8px 10px; display: inline-block; font-size: 14px; line-height: 1; min-width: 40px; color: #000; text-transform: uppercase;}
+a.sigProArrow:hover { background-color: #fff; opacity: 1; text-decoration: none; }
+a.sigProArrow.sigProArrowPrev { left: 0; }
+a.sigProArrow.sigProArrowNext  { right: 0; text-align: right; }
+
+/* Flickr Set link */
+a.sigProFlickrSetLink {display:block;clear:left;padding:2px 8px;font-size:10px;text-align:center;}
+
+/* Print message */
+.sigProPrintMessage {display:none;}
+
+
+/* Slick.js
+------------------------------------------------------------------- */
+.slick-slider {position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent;}
+.slick-list {position:relative;display:block;overflow:hidden;margin:0;padding:0;}
+.slick-list:focus {outline:none;}
+.slick-list.dragging {cursor:pointer;cursor:hand;}
+.slick-slider .slick-track,
+.slick-slider .slick-list {-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
+.slick-track {position:relative;top:0;left:0;display:block;overflow:hidden;margin-bottom:10px;}
+.slick-track:before,
+.slick-track:after {display:table;content:'';}
+.slick-track:after {clear:both;}
+.slick-loading .slick-track {visibility:hidden;}
+.slick-slide {display:none;float:left;height:100%;min-height:1px;}
+[dir='rtl'] .slick-slide {float:right;}
+.slick-slide img {display:block;}
+.slick-slide.slick-loading img {display:none;}
+.slick-slide.dragging img {pointer-events:none;}
+.slick-initialized .slick-slide {display:block;}
+.slick-loading .slick-slide {visibility:hidden;}
+.slick-vertical .slick-slide {display:block;height:auto;border:1px solid transparent;}
+.slick-arrow.slick-hidden {display:none;}
+
+.slick-loading .slick-list {background:#fff url('../images/ajax-loader.gif') center center no-repeat;}
+
+/* Arrows */
+.slick-prev,
+.slick-next {font-size:0;line-height:0;position:absolute;top:50%;z-index:99;display:block;width:20px;height:20px;padding:0;-webkit-transform:translate(0, -50%);-ms-transform:translate(0, -50%);transform:translate(0, -50%);cursor:pointer;color:#333;border:none;outline:none;background:transparent;}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {color:transparent;outline:none;background:transparent;}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {opacity:1;}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {opacity:.25;}
+.slick-prev:before,
+.slick-next:before {font-family:'slick';font-size:22px;line-height:1;color:#333;opacity:.75;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.slick-prev {left:-12px;}
+[dir='rtl'] .slick-prev {right:-12px;left:auto;}
+.slick-prev:before {content:'←';}
+[dir='rtl'] .slick-prev:before {content:'→';}
+.slick-next {right:-12px;}
+[dir='rtl'] .slick-next {right:auto;left:-12px;}
+.slick-next:before {content:'→';}
+[dir='rtl'] .slick-next:before {content:'←';}
+
+/* Dots */
+.slick-dotted.slick-slider {margin-bottom:30px;}
+.slick-dots {position:absolute;bottom:-12px;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center;}
+.slick-dots li {position:relative;display:inline-block;width:20px;height:20px;margin:0 5px;padding:0;cursor:pointer;}
+.slick-dots li button {font-size:0;line-height:0;display:block;width:20px;height:20px;padding:0;cursor:pointer;color:transparent;border:0;outline:none;background:transparent;}
+.slick-dots li button:hover,
+.slick-dots li button:focus {outline:none;}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {opacity:1;}
+.slick-dots li button:before {font-family:'slick';font-size:12px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:'•';text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#ccc;}
+.slick-dots li.slick-active button:before {font-family:'slick';font-size:12px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:'•';text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#222;}

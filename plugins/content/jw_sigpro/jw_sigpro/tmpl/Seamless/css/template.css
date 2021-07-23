@@ -1,0 +1,54 @@
+/**
+ * @version    3.8.x
+ * @package    Simple Image Gallery Pro
+ * @author     JoomlaWorks - https://www.joomlaworks.net
+ * @copyright  Copyright (c) 2006 - 2020 JoomlaWorks Ltd. All rights reserved.
+ * @license    https://www.joomlaworks.net/license
+ */
+
+/* --- Generic Styling --- */
+a:active,a:focus {outline:0;}
+table.contentpaneopen {width:100%;}
+li.sigProClear {clear:both;float:none!important;height:0!important;line-height:0!important;border:none!important;background:none!important;width:auto;margin:0!important;padding:0!important;}
+
+/* Container */
+ul.sigProSeamless {margin:8px auto!important;padding:8px 0!important;list-style:none;clear:both;overflow:hidden;}
+    ul.sigProSeamless.singleThumbGallery {margin:0!important;padding:8px 0!important;list-style:none!important;float:left;}
+
+/* Thumbnail */
+ul.sigProSeamless li.sigProThumb {float:left;background:#fff!important;margin:0 1px 1px 0;padding:0;list-style:none!important;}
+ul.sigProSeamless li.sigProThumb a.sigProLink,
+ul.sigProSeamless li.sigProThumb a.sigProLink:hover {display:block;float:left;padding:0;margin:0;border:0;background-color:#000;position:relative;}
+ul.sigProSeamless li.sigProThumb a.sigProLink {}
+ul.sigProSeamless li.sigProThumb a.sigProLink:hover {}
+ul.sigProSeamless li.sigProThumb a.sigProLink img.sigProImg,
+ul.sigProSeamless li.sigProThumb a.sigProLink:hover img.sigProImg {display:block;width:100%;height:100%;padding:0;margin:0;border:none;background-repeat:no-repeat;background-position:50% 50%;}
+ul.sigProSeamless li.sigProThumb a.sigProLink:hover img.sigProImg {opacity:0.7;}
+ul.sigProSeamless li.sigProThumb a.sigProLink:hover:after {position:absolute;top:50%;left:50%;margin:-24px 0 0 -24px;display:block;content:"";width:48px;height:48px;background:transparent url(../images/magnify_48x48_24.png) no-repeat;}
+
+/* Popup */
+span.sigProPopupCaption { font-weight:bold; color:#C63C13; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; }
+a.sigProDownloadLink,
+a.sigProDownloadLink:hover { background:url(../images/disk.png) no-repeat left center; padding:4px 0 4px 20px; }
+div.sigProModulePosition { text-align:center; border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:4px; margin:8px 0; background:#ffffdd; }
+
+/* IE specific styling:Use "body.sigProIsIEX element {}" - where X is 6, 7 or 8 - to target elements for these browser versions only */
+body.sigProIsIE6 {}
+body.sigProIsIE7 {}
+    body.sigProIsIE7 ul.sigProSeamless li.sigProThumb a.sigProLink,
+    body.sigProIsIE7 ul.sigProSeamless li.sigProThumb a.sigProLink:hover {float:left;}
+body.sigProIsIE8 {}
+body.sigProIsIE9 {}
+
+/* Flickr Set link */
+a.sigProFlickrSetLink {display:block;clear:left;padding:2px 8px;font-size:10px;text-align:center;}
+
+/* Print message */
+.sigProPrintMessage {display:none;}
+
+/* Print CSS rules used to hide galleries on page print outs and display URL */
+@media print {
+    .sigProContainer {display:none;}
+    .sigProPrintOutput {display:block;color:#999;font-size:14px;padding:8px 0;}
+        .sigProPrintOutput img {width:33%;height:auto;vertical-align:top;}
+}

@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("document","ru",{menu:"Редактировать документ",toolbar:"Вставить/Редактировать документ"})

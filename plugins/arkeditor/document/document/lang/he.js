@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("document","he",{menu:"מאפייני מסמך",toolbar:"הוספה / עריכה של מסמך"})

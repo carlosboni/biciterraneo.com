@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("document","zh-cn",{menu:"编辑文件",toolbar:"插入/编辑文件"})
