@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+		<file>js/owl-carousel/owl.carousel.min.js</file>
+		<file>js/jquery.paroller.min.js</file>
+		<file>js/script.js</file>
+	</scripts>
+	
+	<stylesheets>
+		<file>//fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,700,700i|Barlow:400,700|Chivo:400,700</file>
+		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>js/owl-carousel/owl.carousel.min.css</file>
+	</stylesheets>
+	
+</assets>

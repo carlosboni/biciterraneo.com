@@ -1,0 +1,102 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// -------------------------------
+// TEAMS STYLE
+// -------------------------------
+.acm-teams {
+	// STYLE 1
+	&.style-1 {
+		.owl-dots {
+			padding-bottom: 0;
+		}
+
+		// Module title
+		.module-title,
+		.sub-heading span{
+			color: @white;
+		}
+		
+		.teams-item {
+			// Avatar
+			.teams-img {
+				background-blend-mode: multiply;
+				background-size: cover;
+				background-position: center center;
+				height: 0;
+				padding-bottom: 150%;
+				position: relative;
+				.transition(all 700ms);
+
+				.fa {
+					background: @white;
+					border-radius: 50%;
+					color: @brand-primary;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-left: -@grid-gutter-width / 2;
+					margin-top: -@grid-gutter-width / 2;
+					line-height: @grid-gutter-width;
+					font-size: 9px;
+					text-align: center;
+					height: @grid-gutter-width;
+					width: @grid-gutter-width;
+					.opacity(0);
+					.transition(all 900ms);
+				}
+			}
+
+			// Name
+			h4 {
+				display: inline-block;
+				color: @white;
+				text-transform: uppercase;
+				margin-top: @t3-global-margin;
+				position: relative;
+
+				// Line effect
+				&:after {
+					background: @brand-primary;
+					bottom: -3px;
+					content: "";
+					height: 2px;
+					position: absolute;
+					left: 0;
+					width: 0;
+					.transition(all 500ms);
+				}
+			}
+
+			// Position
+			p {
+				display: block;
+				color: @gray-light;
+				font-size: @t3-font-size-small;
+			}
+
+			// Action hover
+			&:hover {
+				// Avatar
+				.teams-img {
+					background-color: @brand-primary;
+
+					.fa {
+						.opacity(1);
+					}
+				}
+
+				// Name
+				h4:after {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

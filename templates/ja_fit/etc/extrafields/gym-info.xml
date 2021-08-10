@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="attribs">
+    <fieldset name="extra-fields" label="TPL_GROUP_EXTRA_FIELDS_LABEL" description="" group="extrafields">
+	    <field name="exercise" type="text" label="TPL_EXERCISE_TYPE_LABEL" description="TPL_EXERCISE_TYPE_DESC"/>
+
+	    <field name="duration" type="text" label="TPL_DURATION_LABEL" description="TPL_DURATION_DESC"/>
+
+	    <field name="fit-level" type="text" label="TPL_FITNESS_LABEL" description="TPL_FITNESS_DESC"/>
+    </fieldset>
+</fields>
+</form>

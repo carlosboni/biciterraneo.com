@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" client="site" type="language" method="upgrade">
+	<name>Nederlands (België)</name>
+	<tag>nl-BE</tag>
+	<version>3.9.8</version>
+	<creationDate>Juni 2019</creationDate>
+	<author>Dutch (BE) translation team</author>
+	<authorEmail>frank.joris@skynet.be</authorEmail>
+	<authorUrl>http://community.joomla.org/translations/joomla-3-translations.html#nl-be</authorUrl>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>nl-BE site language</description>
+	<files>
+		<folder>/</folder>
+		<filename file="meta">install.xml</filename>
+	</files>
+	<params />
+</extension>

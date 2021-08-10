@@ -1,0 +1,68 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+html {
+	// Gloabal style
+	// --------------------
+	.sub-heading:after,
+	.module-title:before {
+		background: rgba(0,0,0,0.1);
+	}
+
+	.t3-section.special-module .sub-heading,
+	.latestnews.list h4 a,
+	.extra-fields li span {
+		color: @headings-color;
+	}
+
+	.other-info a,
+	.acm-calendar .description-bottom a {
+		color: @brand-primary;
+	}
+
+	.social-list > li > a {
+		color: @gray-light;
+
+		&:hover,&:focus,&:active {
+			color: @brand-primary;
+		}
+	}
+
+	.article-title,
+	.article-header h1,
+	&.com_dtregister .eventlists .event-detail .event-title,
+	.tag-category .category > li .media-wrap .media-body .title {
+		a {
+			&:hover,&:focus,&:active {
+				border-bottom-color: rgba(0,0,0,0.05);
+			}
+		}
+	}
+
+	.extra-fields.view-detail {
+
+	}
+
+	// ACM Style
+	.acm-features.style-1 .image-intro .feature-icon {
+		border-color: @white;
+	}
+
+	.acm-teams.style-1 .sub-heading:after {
+		background: @brand-primary;
+	}
+
+	.acm-calendar .calendar-table .col-body .calendar-info.row0 {
+		background: @gray-dark;
+	}
+
+	.acm-features.style-3 .owl-dots .owl-dot {
+		background: @headings-color;
+		.opacity(0.2);
+
+		&.active {
+			.opacity(1);
+		}
+	}
+}

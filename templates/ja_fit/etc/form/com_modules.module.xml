@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="custom-field" label="Module options" description="">
+			<field name="sub-heading" type="textarea" default="" label="TPL_SUB_HEADING_LABEL" description="TPL_SUB_HEADING_DESC" filter="RAW" />
+
+      <field name="mod-bg" type="media" default="" label="TPL_MODULE_BACKGROUND_LABEL" description="TPL_MODULE_BACKGROUND_DESC" filter="RAW" />
+
+      <field name="align-bg" type="list"
+        default="center"
+        label="TPL_BACKGROUND_POSITION_LABEL"
+        description="TPL_BACKGROUND_POSITION_DESC">
+        <option value="center">Center</option>
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+      </field>
+
+      <field name="align-title" type="list"
+        default="none"
+        label="TPL_ALIGN_TITLE_LABEL"
+        description="TPL_ALIGN_TITLE_DESC">
+        <option value="left">Left</option>
+        <option value="center">Center</option>
+      </field>
+
+      <field name="padding-top" type="radio"
+        class="btn-group btn-group-yesno"
+        default="1"
+        label="TPL_SPACE_TOP_LABEL"
+        description="TPL_SPACE_TOP_DESC">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+
+      <field name="padding-bottom" type="radio"
+        class="btn-group btn-group-yesno"
+        default="1"
+        label="TPL_SPACE_BOTTOM_LABEL"
+        description="TPL_SPACE_BOTTOM_DESC">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+
+      <field name="module-width" type="radio"
+        class="btn-group btn-group-yesno"
+        default="1"
+        label="TPL_ENABLE_FULL_WIDTH"
+        description="TPL_ENABLE_FULL_WIDTH_DESC">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+    </fieldset>
+  </fields>
+</form>

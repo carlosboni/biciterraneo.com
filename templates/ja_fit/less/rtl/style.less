@@ -1,0 +1,117 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+// RTL STYLES
+// ------------------------------------------------------
+div.t3-off-canvas {
+	width: 0;
+
+	.off-canvas-open & {
+		width: @t3-off-canvas-width;
+	}
+}
+// Global Style
+// --------------
+
+.languageswitcherload {
+  ul {
+    float: left;
+  }
+}
+
+.popover {
+	right: auto!important;
+
+	&.left .arrow {
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		right: auto;
+		left: 100%;
+	}
+}
+
+.mainnav-right .search .form-control,
+.com_dtregister .mainnav-right .search .form-control {
+	padding: 0 0 0 @navbar-height;
+
+	&:focus {
+		padding-right: @t3-global-padding;
+	}
+}
+
+.profile-edit .form-group .form-group .controls .chzn-container > a b {
+	background-position: 0 12px;
+}
+
+// OWL RTL
+.owl-stage-outer {
+	direction: ltr;
+
+	.owl-stage {
+		direction: rtl;
+	}
+}
+
+// Icon
+span {
+	&.ion-arrow-right-c::before {
+   content: "\f108";
+	}
+
+	&.ion-arrow-left-c::before {
+	    content: "\f10b";
+	}
+
+	&.ion-chevron-left::before {
+    content: "\f125";
+	}
+
+	&.ion-chevron-right::before {
+    content: "\f124";
+	}
+
+	&.fa-arrow-left::before {
+    content: "\f061";
+	}
+
+	&.fa-arrow-right::before {
+    content: "\f060";
+	}
+}
+
+div.mce-btn-has-text .mce-ico {
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+// ACM Style
+div.acm-features.style-4 .features-image img {
+	@media (min-width: @screen-md-min) {
+		left: 50%;
+		right: auto;
+	}
+}
+
+// DT Register
+.com_dtregister .eventlists .event-detail .event-price {
+	left: 0;
+	right: auto;
+}
+
+.com_dtregister .eventlists .event-footer .dth-btn + .dth-btn,
+.com-dtregister .eventlists .event-footer .dth-btn + .dth-btn {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+th.attendee_coltitle {
+	text-align: right;
+}
+
+.st-ad-mr {
+  margin-right: -7px;
+  margin-left: 0;
+}
+
+

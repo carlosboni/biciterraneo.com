@@ -1,0 +1,115 @@
+.acm-slideshow {
+  position: relative;
+}
+.acm-slideshow .mask-slideshow {
+  background-color: #111111;
+  mask: url('../../../../../acm/slideshow/images/mask.svg') no-repeat center center;
+  -webkit-mask: url('../../../../../acm/slideshow/images/mask.svg') no-repeat center center;
+  -webkit-mask-size: cover;
+  content: "";
+  height: 160px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+@media (max-width: 991px) {
+  .acm-slideshow .mask-slideshow {
+    display: none;
+  }
+}
+.acm-slideshow .owl-carousel {
+  cursor: move;
+  padding: 0;
+  overflow: hidden;
+}
+.acm-slideshow .owl-carousel .item {
+  position: relative;
+  overflow: hidden;
+}
+.acm-slideshow .owl-carousel .item .img-bg {
+  max-width: 100%;
+}
+.acm-slideshow .owl-carousel .item .slider-img {
+  width: 100%;
+  height: auto;
+}
+.acm-slideshow .owl-carousel .item .slider-thumb {
+  width: auto;
+}
+.acm-slideshow .owl-carousel .item .slider-content {
+  display: block;
+  color: #ffffff;
+  top: 50%;
+  right: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  margin-right: 0;
+  margin-top: -160px;
+  height: auto;
+  text-align: center;
+  z-index: 2;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+@media (max-width: 991px) {
+  .acm-slideshow .owl-carousel .item .slider-content {
+    margin-top: 0;
+  }
+}
+.acm-slideshow .owl-carousel .item .slider-content h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 84px;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  .acm-slideshow .owl-carousel .item .slider-content h1 {
+    font-size: 56px;
+  }
+}
+@media (max-width: 767px) {
+  .acm-slideshow .owl-carousel .item .slider-content h1 {
+    font-size: 36px;
+  }
+}
+.acm-slideshow .owl-carousel .item .slider-content-inner .title {
+  color: #ffffff;
+  line-height: 1.066;
+  text-transform: uppercase;
+}
+.acm-slideshow .owl-carousel .item .slider-content-inner .title p {
+  margin-bottom: 0;
+}
+.acm-slideshow .owl-carousel .item .slider-content-inner .title i {
+  color: #dd2222;
+}
+.acm-slideshow .owl-carousel .item .slider-content-inner .title .sub-heading {
+  color: #ffffff;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .acm-slideshow .owl-carousel .item .slider-content-inner .title .sub-heading {
+    font-size: 14px;
+  }
+}
+.acm-slideshow .owl-carousel .owl-dots {
+  bottom: 144px;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .acm-slideshow .owl-carousel .owl-dots {
+    bottom: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .acm-slideshow .owl-carousel .owl-dots {
+    bottom: 0;
+  }
+}

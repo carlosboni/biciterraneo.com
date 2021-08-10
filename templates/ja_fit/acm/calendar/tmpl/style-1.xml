@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Calendar</title>
+    <sampledata></sampledata>
+    <fields name="calendar">
+        <fieldset name="calendar-basic" label="CALENDAR_BASIC_LABEL" description="CALENDAR_BASIC_DESC" multiple="0">
+            <field name="intro-top" type="textarea" default="" rows="5" cols="40" label="CALENDAR_DES_TOP_LABEL" description="CALENDAR_DES_TOP_DESC" filter="raw" />
+            <field name="intro-bottom" type="textarea" default="" rows="5" cols="40" label="CALENDAR_DES_BOTTOM_LABEL" description="CALENDAR_DES_BOTTOM_DESC" filter="raw" />
+        </fieldset>
+
+
+        <fieldset name="calendar-col" size="50" label="CALENDAR_COLUMN_LABEL" description="CALENDAR_COLUMN_DESC">
+            <field name="data" type="jatable">
+                <item name="calendar-col-name" size="50" type="textarea" default="" label="CALENDAR_COLNAME_LABEL" description="CALENDAR_COLNAME_DESC" required="1"/>
+            </field>
+        </fieldset>
+
+    </fields>
+</form>

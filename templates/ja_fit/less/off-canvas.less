@@ -1,0 +1,272 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t3/base-bs3/less/off-canvas.less";
+
+
+
+//
+// OFF-CANVAS
+// -------------------------------------
+
+// Toggle Button
+// -------------------
+.off-canvas-toggle {
+  border-radius: 0;
+  border: 0;
+  border-left: 1px solid rgba(255,255,255,0.2);
+  padding: 0;
+  width: @t3-global-margin;
+  height: @navbar-height;
+  line-height: @navbar-height;
+  float: right;
+  text-align: center;
+  position: relative;
+  margin-right: 0;
+  width: @navbar-height;
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    background-color: @white;
+    display: block;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -1px;
+    margin-left: -10px;
+    width: 20px;
+    transition: all 0.25s;
+
+    &.bar-first {
+      margin-top: -6px;
+    }
+
+    &.bar-mid {
+
+    }
+
+    &.bar-last {
+      margin-top: 4px;
+    }
+  }
+
+  &:hover {
+    background: @navbar-default-link-hover-bg;
+    border-left: 1px solid rgba(255,255,255,0.2);
+  }
+}
+
+.off-canvas-open {
+
+  .off-canvas-toggle {
+    background: transparent;
+    
+    span.bar-mid {
+      display: none;
+    }
+
+    span.bar-first {
+      margin-top: 0;
+      transform: rotate(45deg);
+    }
+
+    span.bar-last {
+      margin-top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+.t3-off-canvas {
+
+  // Generic
+  // -----------------------------------
+  background: @t3-off-canvas-background;
+  color: @t3-off-canvas-text-color;
+
+
+  // Header
+  // -----------------------------------
+  .t3-off-canvas-header {
+    background: @t3-off-canvas-header-background;
+    color: @t3-off-canvas-header-text-color;
+    height: @grid-gutter-width;
+    padding: 0 @t3-global-padding;
+
+    // Title
+    h2 {
+      color: @white;
+      margin: 0;
+      line-height: @grid-gutter-width;
+      font-size: @font-size-h5;
+      font-family: @font-family-sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+  }
+
+  // Close Button
+  .close {
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    color: @white;
+    margin: 0;
+    height: @grid-gutter-width;
+    line-height: @grid-gutter-width;
+    font-weight: 300;
+    font-size: @font-size-base;
+    width: @grid-gutter-width;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    right: 0;
+    .opacity(1);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.3);;
+    }
+  }
+
+
+  // Body
+  // -----------------------------------
+  .t3-off-canvas-body {
+    padding: @t3-global-padding;
+
+    // Links
+    // ------------
+    a {
+      color: @t3-off-canvas-text-color;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: @t3-off-canvas-link-hover-color;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+
+    .dropdown-menu .active a {
+      background: @t3-off-canvas-background;
+    }
+
+
+    // Navigations
+    // ------------
+    .nav {
+      > li {
+        > a,
+        > span {
+          background: transparent;
+          border: 0;
+          color: @t3-off-canvas-link-color;
+          display: block;
+          font-weight: 500;
+          padding: @t3-global-padding / 3 0;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+
+          &:hover,&:focus,&:active {
+            color: @t3-off-canvas-link-hover-color;
+          }
+        }
+
+        &.active {
+          > a,
+          > span {
+            background: @t3-off-canvas-background;
+            color: @t3-off-canvas-link-hover-color;
+          }
+        }
+      }
+
+      // Hidden Caret
+      .caret,
+      a:after {
+        display: none;
+      }
+    }
+
+    // Dropdown Menu
+    .dropdown-menu {
+      background: @t3-off-canvas-background;
+      padding-left: @t3-global-padding / 2;
+
+      > li {
+        > a,
+        > span {
+          border: 0;
+          color: @t3-off-canvas-link-color;
+          padding-left: 0;
+
+          &:hover,
+          &:focus,
+          &:active {
+            background: @t3-off-canvas-background;
+            color: @t3-off-canvas-link-hover-color;
+          }
+        }
+
+        &.active > a {
+          background: @t3-off-canvas-background;
+          color: @t3-off-canvas-link-hover-color;
+        }
+      }
+    }
+
+    // Dropdown submenu
+    .dropdown-submenu {
+      &.active {
+        > span {
+          background: @t3-off-canvas-background;
+          color: @t3-off-canvas-link-hover-color;
+        }
+      }
+    }
+
+    // Modules
+    // ------------
+    .t3-module {
+      margin-bottom: @line-height-computed;
+    }
+
+    .module-title  {
+      background: @t3-off-canvas-background;
+      border-bottom: 1px solid @gray-light;
+      color: @t3-module-title-color;
+      padding: 0;
+      margin: 0 0 @t3-global-margin;
+      text-transform: uppercase;
+      text-align: left;
+      font-size: @font-size-base;
+      font-weight: 300;
+    }
+
+    .module-ct {
+      padding: 0;
+    }
+
+  // End Off-Canvas Body
+  }
+
+// End Off-Canvas Content Styles
+}

@@ -1,0 +1,67 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.acm-cta {
+	.cta-showcase-item {
+		background-color: @brand-primary;
+		background-blend-mode: multiply;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		overflow: hidden;
+		padding: @grid-gutter-width * 2 0;
+		text-align: center;
+
+		// Mobile view
+		@media (max-width: @screen-xs-max) {
+			padding: @grid-gutter-width @grid-gutter-width / 2;
+			display: block;
+		}
+
+		// Title
+		h2 {
+			color: @white;
+			display: inline-block;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0;
+			padding: 0 @grid-gutter-width / 2;
+
+			// Mobile/tablet view
+			@media (max-width: @screen-sm-max) {
+				display: block;
+				margin-bottom: @grid-gutter-width;
+				font-size: @font-size-h3;
+			}
+		}
+
+		// Action
+		.btn {
+			border-color: @white;
+			color: @white;
+			margin-left: @grid-gutter-width;
+			margin-right: @grid-gutter-width;
+			padding-left: @grid-gutter-width * 2;
+			padding-right: @grid-gutter-width * 2;
+
+			// Mobile view
+			@media (max-width: @screen-xs-max) {
+				margin: 0;
+			}
+
+			&:hover,&:focus,&:active {
+				background: @white;
+				color: @brand-primary;
+			}
+		}
+	}
+}
+

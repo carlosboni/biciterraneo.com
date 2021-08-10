@@ -1,0 +1,255 @@
+.acm-calendar .description-top {
+  max-width: 390px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+.acm-calendar .description-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+.acm-calendar .description-bottom a {
+  color: #ffffff;
+  border-bottom: 1px solid #e67e00;
+}
+.acm-calendar .calendar-table {
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.acm-calendar .calendar-table:before,
+.acm-calendar .calendar-table:after {
+  content: " ";
+  display: table;
+}
+.acm-calendar .calendar-table:after {
+  clear: both;
+}
+@media (max-width: 767px) {
+  .acm-calendar .calendar-table {
+    flex-wrap: wrap;
+  }
+}
+.acm-calendar .calendar-table .col {
+  float: left;
+}
+.acm-calendar .calendar-table .col + .col {
+  border-left: 1px solid #e5e5e5;
+}
+.acm-calendar .calendar-table .col.has-1 {
+  width: 100%;
+}
+.acm-calendar .calendar-table .col.has-2 {
+  width: 49.8%;
+}
+.acm-calendar .calendar-table .col.has-3 {
+  width: 33.2%;
+}
+@media (max-width: 767px) {
+  .acm-calendar .calendar-table .col.has-3 {
+    width: 24.9%;
+  }
+  .acm-calendar .calendar-table .col.has-3:last-child {
+    border-right: 1px solid #e5e5e5;
+  }
+  .acm-calendar .calendar-table .col.has-3:nth-child(5) {
+    border-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .acm-calendar .calendar-table .col.has-3 {
+    width: 49.8%;
+  }
+  .acm-calendar .calendar-table .col.has-3:nth-child(2n + 1) {
+    border-left: 0;
+  }
+}
+.acm-calendar .calendar-table .col.has-4 {
+  width: 24.9%;
+}
+@media (max-width: 767px) {
+  .acm-calendar .calendar-table .col.has-4 {
+    width: 24.9%;
+  }
+  .acm-calendar .calendar-table .col.has-4:last-child {
+    border-right: 1px solid #e5e5e5;
+  }
+  .acm-calendar .calendar-table .col.has-4:nth-child(5) {
+    border-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .acm-calendar .calendar-table .col.has-4 {
+    width: 49.8%;
+  }
+  .acm-calendar .calendar-table .col.has-4:nth-child(2n + 1) {
+    border-left: 0;
+  }
+}
+.acm-calendar .calendar-table .col.has-5 {
+  width: 20%;
+}
+@media (max-width: 767px) {
+  .acm-calendar .calendar-table .col.has-5 {
+    width: 24.9%;
+  }
+  .acm-calendar .calendar-table .col.has-5:last-child {
+    border-right: 1px solid #e5e5e5;
+  }
+  .acm-calendar .calendar-table .col.has-5:nth-child(5) {
+    border-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .acm-calendar .calendar-table .col.has-5 {
+    width: 49.8%;
+  }
+  .acm-calendar .calendar-table .col.has-5:nth-child(2n + 1) {
+    border-left: 0;
+  }
+}
+.acm-calendar .calendar-table .col.has-6 {
+  width: 16.666%;
+}
+@media (max-width: 767px) {
+  .acm-calendar .calendar-table .col.has-6 {
+    width: 24.9%;
+  }
+  .acm-calendar .calendar-table .col.has-6:last-child {
+    border-right: 1px solid #e5e5e5;
+  }
+  .acm-calendar .calendar-table .col.has-6:nth-child(5) {
+    border-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .acm-calendar .calendar-table .col.has-6 {
+    width: 49.8%;
+  }
+  .acm-calendar .calendar-table .col.has-6:nth-child(2n + 1) {
+    border-left: 0;
+  }
+}
+.acm-calendar .calendar-table .col.has-7 {
+  width: 14.285%;
+}
+@media (max-width: 767px) {
+  .acm-calendar .calendar-table .col.has-7 {
+    width: 24.9%;
+  }
+  .acm-calendar .calendar-table .col.has-7:last-child {
+    border-right: 1px solid #e5e5e5;
+  }
+  .acm-calendar .calendar-table .col.has-7:nth-child(5) {
+    border-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .acm-calendar .calendar-table .col.has-7 {
+    width: 49.8%;
+  }
+  .acm-calendar .calendar-table .col.has-7:nth-child(2n + 1) {
+    border-left: 0;
+  }
+}
+.acm-calendar .calendar-table .col-header {
+  padding: 24px;
+}
+.acm-calendar .calendar-table .col-header h3 {
+  color: #f97242;
+  text-transform: uppercase;
+  margin: 0;
+}
+.acm-calendar .calendar-table .col-body .calendar-info {
+  border-top: 1px solid #e5e5e5;
+  padding: 24px 15px;
+  height: 142px;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .acm-calendar .calendar-table .col-body .calendar-info {
+    padding: 24px 7.5px;
+  }
+}
+.acm-calendar .calendar-table .col-body .calendar-info::before {
+  background: #e67e00;
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+  z-index: 2;
+}
+.acm-calendar .calendar-table .col-body .calendar-info.empty::before {
+  display: none;
+}
+.acm-calendar .calendar-table .col-body .calendar-info.row0 {
+  background: #f5f5f5;
+}
+.acm-calendar .calendar-table .col-body .calendar-info .time-class {
+  color: #24b524;
+  position: relative;
+  z-index: 11;
+}
+@media (max-width: 1199px) {
+  .acm-calendar .calendar-table .col-body .calendar-info .time-class {
+    font-size: 12px;
+  }
+}
+.acm-calendar .calendar-table .col-body .calendar-info .info-class {
+  display: block;
+  position: relative;
+  z-index: 11;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.acm-calendar .calendar-table .col-body .calendar-info a,
+.acm-calendar .calendar-table .col-body .calendar-info h4 {
+  border-bottom: 2px solid transparent;
+  color: #222222;
+  display: inline;
+  font-size: 18px;
+  font-family: "Barlow Semi Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+@media (max-width: 1199px) {
+  .acm-calendar .calendar-table .col-body .calendar-info a,
+  .acm-calendar .calendar-table .col-body .calendar-info h4 {
+    font-size: 14px;
+  }
+}
+.acm-calendar .calendar-table .col-body .calendar-info p {
+  display: block;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.acm-calendar .calendar-table .col-body .calendar-info:hover::before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.acm-calendar .calendar-table .col-body .calendar-info:hover a,
+.acm-calendar .calendar-table .col-body .calendar-info:hover h4 {
+  color: #ffffff;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+.acm-calendar .calendar-table .col-body .calendar-info:hover .time-class,
+.acm-calendar .calendar-table .col-body .calendar-info:hover p {
+  color: #ffffff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}

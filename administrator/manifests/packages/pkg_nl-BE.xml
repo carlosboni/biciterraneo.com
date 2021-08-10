@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" version="3.8" method="upgrade">
+	<name>Belgisch (nl-BE) taalpakket</name>
+	<packagename>nl-BE</packagename>
+	<version>3.9.8.1</version>
+	<creationDate>Juni 2019</creationDate>
+	<author>Dutch (BE) translation team</author>
+	<authorEmail>frank.joris@skynet.be</authorEmail>
+	<authorUrl>http://community.joomla.org/translations/joomla-3-translations.html#nl-be</authorUrl>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<url>https://github.com/joomla/joomla-cms</url>
+	<packager>Joomla! Project</packager>
+	<packagerurl>www.joomla.org</packagerurl>
+	<description><![CDATA[
+		<div style="text-align: left;">
+			<h3>Joomla! 3.9.8 Full Flemish (nl-BE) Language Package - Version 3.9.8v1</h3>
+			<h3>Volledig Vlaams (nl-BE) taalpakket voor Joomla! 3.9.8 - Versie 3.9.8v1</h3>
+		</div>
+		]]></description>
+	<blockChildUninstall>true</blockChildUninstall>
+	<files>
+		<folder type="language" client="site" id="nl-BE">site_nl-BE</folder>
+		<folder type="language" client="administrator" id="nl-BE">admin_nl-BE</folder>
+	</files>
+	<updateservers>
+		<server type="collection" priority="1" name="Accredited Joomla! Translations">
+			https://update.joomla.org/language/translationlist_3.xml
+		</server>
+	</updateservers>
+</extension>

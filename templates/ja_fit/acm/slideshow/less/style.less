@@ -1,0 +1,144 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+// ------------------------------------------------
+// SLIDESHOW STYLE OWL
+// ------------------------------------------------
+.acm-slideshow {
+  position: relative;
+
+  // Mask Background
+  .mask-slideshow {
+    background-color: @body-bg;
+    mask: url('@{t3-image-path}/mask.svg') no-repeat center center;
+    -webkit-mask: url('@{t3-image-path}/mask.svg') no-repeat center center;
+    -webkit-mask-size: cover;
+    content: "";
+    height: 160px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+    // Mobile/tablet view
+    @media (max-width: @screen-sm-max) {
+      display: none;
+    }
+  }
+
+  .owl-carousel {
+    cursor: move;
+    padding: 0;
+    overflow: hidden;
+
+    .item {
+      position: relative;
+      overflow: hidden;
+
+      .img-bg {
+        max-width: 100%;
+      }
+
+      .slider-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .slider-thumb {
+        width: auto;
+      }
+
+      .slider-content {
+        display: block;
+        color: @white;
+        top: 50%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        padding: 0;
+        margin-left: 0;
+        margin-top: -160px;
+        height: auto;
+        text-align: center;
+        z-index: 2;
+        transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+
+        // Table/mobile view
+        @media (max-width: @screen-sm-max) {
+          margin-top: 0;
+        }
+
+        h1 {
+          color: @white;
+          font-weight: 700;
+          font-size: @font-size-h1 * 1.5;
+          margin-bottom: @grid-gutter-width;
+          margin-top: 0;
+
+          // Tablet view
+          @media (max-width: @screen-sm-max) {
+            font-size: @font-size-h1;
+          }
+
+          // Mobile view
+          @media (max-width: @screen-xs-max) {
+            font-size: @font-size-h2;
+          }
+        }
+      }
+
+      .slider-content-inner {
+        .title {
+          color: @white;
+          line-height: 1.066;
+          text-transform: uppercase;
+
+          p {
+            margin-bottom: 0;
+          }
+
+          i {
+            color: @brand-primary;
+          }
+
+          // Sub Heading
+          .sub-heading {
+            color: @white;
+            font-size: @font-size-h4;
+
+            // Mobile view
+            @media (max-width: @screen-xs-max) {
+              font-size: @font-size-base;
+            }
+          }
+        }
+      }
+    }
+
+    // Dot Control
+    .owl-dots {
+      bottom: @t3-global-margin * 6;
+      left: 0;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+
+      // Medium view
+      @media (max-width: @screen-md-max) {
+        bottom: @t3-global-margin;
+      }
+
+      // Tablet view
+      @media (max-width: @screen-sm-max) {
+        bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+
+
+/*===============================
+/plugins/content/jw_sigpro/jw_sigpro/includes/css/print.css
+================================================================================*/
+@media print{.sigProContainer{display:none}.sigProPrintMessage{display:block;color:#999;font-size:14px;padding:8px 0}}
