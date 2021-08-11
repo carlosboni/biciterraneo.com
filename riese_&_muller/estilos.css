@@ -7,7 +7,8 @@ fecha: Agosto 2021
 */
 
 :root {
-  --azulclaro: #e6f2ff;
+  --naranjafondo: #ff8c00;
+  --naranjaoscuro:#6e3d00;
 }
 
 @font-face {
@@ -160,8 +161,20 @@ a:hover {
   border-radius: 0.5em;
   padding: 0.8em 1.2em;
   /*        #E67E00     */
+  
 
-  background-color: #ED303C;
+  background-color: var(--naranjafondo);
+  background-image: -moz-linear-gradient(top, var(--naranjafondo), var(--naranjaoscuro));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--naranjafondo)), to(var(--naranjaoscuro)));
+  background-image: -webkit-linear-gradient(top, var(--naranjafondo), var(--naranjaoscuro));
+  background-image: -o-linear-gradient(top, var(--naranjafondo0), var(--naranjaoscuro));
+  background-image: linear-gradient(to bottom, var(--naranjafondo), var(--naranjaoscuro));
+  background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+
+ /*  background-color: #ED303C;
   background-image: -moz-linear-gradient(top, #ED303C, #8D121A);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ED303C), to(#8D121A));
   background-image: -webkit-linear-gradient(top, #ED303C, #8D121A);
@@ -170,7 +183,7 @@ a:hover {
   background-repeat: repeat-x;
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
      -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25); */
 }
 
 .btn:hover,
@@ -180,7 +193,7 @@ a:hover {
 .btn-primary[disabled] {
   text-decoration: none;
   color: #ddd;
-  background-color: #8D121A;
+  background-color: var(--naranjaoscuro);
   background-position: 0 -15px;
   -webkit-transition: background-position 0.1s linear;
      -moz-transition: background-position 0.1s linear;
