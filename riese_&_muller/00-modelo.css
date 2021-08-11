@@ -1,0 +1,99 @@
+/*
+CSS 
+web o pagina:
+autor:
+fecha:
+RECORDAR:
+en caso de conflictos se aplica el estilo que se define último,
+o sea al final de este archivo o en la misma pagina html
+
+Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
+
+*/
+
+:root {
+  --azulclaro: #e6f2ff;
+}
+
+* {
+	 /* estilos por defecto para TODOS los elementos de la página; */
+	/* estilo:valor; */
+	font-family: 'Nunito', sans-serif;
+	text-transform:none;
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background: var(--azulclaro); /* Azul al 10% */
+}
+
+div {
+  /* estilos para todos los elementos <div>; */
+  /* estilo:valor; */
+  
+  /* box-sizing:border-box  incluye en las dimensiones de un elemento el espacio del padding y del border. */
+  /* display:flex   da la misma altura a todos los elementos que están en el mismo DIV */
+}
+
+.claseUno {
+  /* estilos para todos los elementos que son de la clase .claseUno; */
+  /* estilo:valor; */
+}
+
+.claseUno.claseDos {
+  /* estilos para todos los elementos que son de la clase .claseUno y .claseDos;
+     NO hay espacio entre ambos selectores  */
+  /* estilo:valor; */
+}
+
+.claseUno .claseDos {
+  /* estilos para todos los elementos de .claseDos que descienden de uno de .claseUno;
+     HAY UN espacio entre ambos selectores  */
+  /* estilo:valor; */
+}
+
+#esteElemento {
+  /* estilos para el único elemento identificado con este #esteElemento; */
+  /* estilo:valor; */
+}
+
+p.claseUno {
+  /* estilos para todos los elementos <p> que son de la clase .claseUno; */
+  /* estilo:valor; */
+}
+
+p,div {
+  /* estilos para todos los elementos que sean <p> o <div>; */
+  /* estilo:valor; */
+}
+
+div > p {
+  /* estilos para todos los elementos que sean <p> que estén dentro (sean hijos de) un <div>; */
+  /* estilo:valor; */
+}
+
+h1 + p {
+  /* estilos para todos los elementos que sean <p> que sean hermanos y estén inmediantamente después de <h1>; */
+  /* estilo:valor; */
+}
+
+/*
+
+pseudoclases, asignarles estilos en este orden llamado LVHA:
+   :link — :visited — :hover — :active.
+   
+Más selectores y documentación:
+pseudo-clases: https://www.w3schools.com/css/css_pseudo_classes.asp
+pseudo-elementos: https://www.w3schools.com/css/css_pseudo_elements.asp
+pseudo-atributos: https://www.w3schools.com/css/css_attribute_selectors.asp
+formularios: https://www.w3schools.com/css/css_form.asp
+posicionamiento: https://www.w3schools.com/css/css_positioning.asp
+selectores: https://www.w3schools.com/cssref/css_selectors.asp
+*/
+
+
+
+
+
