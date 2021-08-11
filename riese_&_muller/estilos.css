@@ -56,13 +56,21 @@ body {
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000000;
   width: 100%;
-  padding: 20px;
+  height:5vh;
+  padding: 0px;
 }
 
-
+#logosvg {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 200;
@@ -144,6 +152,7 @@ a:hover {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   display: inline-block;
   text-decoration: none;
+  font-size:1.2em;
   font-weight: 200;
   text-align: center;
   vertical-align: middle;
@@ -207,10 +216,6 @@ h1 {
   font-weight: 800;
   text-shadow: 0.025em 0.025em 0.025em rgba(0, 0, 0, 0.8);
   visibility: hidden;
-}
-
-.jumbotron h1 .char11 {
-  color: #ED303C;
 }
 
 p {
@@ -285,7 +290,7 @@ p {
 .playground .viewport .tlt {
   font-family: exo, sans-serif;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 200;
   letter-spacing: 1px;
   padding: 20px 0;
