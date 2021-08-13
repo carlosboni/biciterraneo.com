@@ -153,7 +153,7 @@ a:hover {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   display: inline-block;
   text-decoration: none;
-  font-size:1.2em;
+  font-size: calc(11px + 0.5vw);
   font-weight: 200;
   text-align: center;
   vertical-align: middle;
@@ -235,7 +235,7 @@ p {
   margin-top: -1em;
   letter-spacing: 0.15em;
   color: #ccc;
-  font-size: 1.8vw !important;
+  font-size: calc(11px + 0.7vw) !important;
   font-weight: 200;
   text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.8);
   visibility: hidden;
@@ -303,7 +303,7 @@ p {
 .playground .viewport .tlt {
   font-family: exo, sans-serif;
   color: #fff;
-  font-size: 2em;
+  font-size: calc(11px + 0.7vw);
   font-weight: 200;
   letter-spacing: 1px;
   padding: 20px 0;
@@ -313,6 +313,7 @@ p {
   text-align: center;
   /*visibility: hidden;*/
 }
+
 
 .deps {
   font-size: 1.2em;
